@@ -28,7 +28,7 @@ class SentenceTransformerEmbedder(SentenceTransformer, BaseEmbedder):
         """
         super().__init__(
             model_name_or_path=engine_args.model,
-            device="cpu",
+            device="cuda",
             trust_remote_code=engine_args.trust_remote_code,
         )
         self.embedding_dtype = engine_args.embedding_dtype
