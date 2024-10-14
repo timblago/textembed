@@ -30,6 +30,7 @@ class SentenceTransformerEmbedder(SentenceTransformer, BaseEmbedder):
             model_name_or_path=engine_args.model,
             device="cuda",
             trust_remote_code=engine_args.trust_remote_code,
+            model_kwargs={"torch_dtype": torch.float16}
         )
         self.embedding_dtype = engine_args.embedding_dtype
         self.engine_args = engine_args

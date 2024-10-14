@@ -1,0 +1,1 @@
+python3 -m textembed.server --models /local_model/USER-bge-m3 --port 9903 --workers 1 --batch-size 1

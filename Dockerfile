@@ -24,4 +24,4 @@ COPY setup.py setup.py
 COPY src/textembed textembed
 
 # Set the entrypoint to your CLI script
-ENTRYPOINT ["python3", "-m", "textembed.server"]
+COPY start_textembed.sh .
